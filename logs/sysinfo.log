@@ -1,23 +1,3 @@
-2025-11-13 11:08:37.921 | SUCCESS  | __main__:<module>:96 - Leak Test Case 0 Success!
-2025-11-13 11:08:37.922 | SUCCESS  | __main__:<module>:97 - Test Case 0:
-2025-11-13 11:08:37.922 | SUCCESS  | __main__:<module>:98 - Linux;ljudge;5.4.241-1-tlinux4-0017.10.eks.12;#1 SMP Fri May 23 13:28:45 CST 2025;x86_64
-2025-11-13 11:08:37.923 | SUCCESS  | __main__:<module>:96 - Leak Test Case 1 Success!
-2025-11-13 11:08:37.923 | SUCCESS  | __main__:<module>:97 - Test Case 1:
-2025-11-13 11:08:37.923 | SUCCESS  | __main__:<module>:98 - Linux;ljudge;5.4.241-1-tlinux4-0017.10.eks.12;#1 SMP Fri May 23 13:28:45 CST 2025;x86_64
-2025-11-13 11:08:37.924 | SUCCESS  | __main__:<module>:96 - Leak Test Case 2 Success!
-2025-11-13 11:08:37.924 | SUCCESS  | __main__:<module>:97 - Test Case 2:
-2025-11-13 11:08:37.924 | SUCCESS  | __main__:<module>:98 - Linux;ljudge;5.4.241-1-tlinux4-0017.10.eks.12;#1 SMP Fri May 23 13:28:45 CST 2025;x86_64
-2025-11-13 11:08:37.925 | SUCCESS  | __main__:<module>:96 - Leak Test Case 3 Success!
-2025-11-13 11:08:37.925 | SUCCESS  | __main__:<module>:97 - Test Case 3:
-2025-11-13 11:08:37.925 | SUCCESS  | __main__:<module>:98 - Linux;ljudge;5.4.241-1-tlinux4-0017.10.eks.12;#1 SMP Fri May 23 13:28:45 CST 2025;x86_64
-2025-11-13 11:08:37.925 | SUCCESS  | __main__:<module>:96 - Leak Test Case 4 Success!
-2025-11-13 11:08:37.926 | SUCCESS  | __main__:<module>:97 - Test Case 4:
-2025-11-13 11:08:37.926 | SUCCESS  | __main__:<module>:98 - Linux;ljudge;5.4.241-1-tlinux4-0017.10.eks.12;#1 SMP Fri May 23 13:28:45 CST 2025;x86_64
-2025-11-13 11:08:37.926 | SUCCESS  | __main__:<module>:96 - Leak Test Case 5 Success!
-2025-11-13 11:08:37.926 | SUCCESS  | __main__:<module>:97 - Test Case 5:
-2025-11-13 11:08:37.926 | SUCCESS  | __main__:<module>:98 - Linux;ljudge;5.4.241-1-tlinux4-0017.10.eks.12;#1 SMP Fri May 23 13:28:45 CST 2025;x86_64
-2025-11-13 11:08:37.926 | SUCCESS  | __main__:<module>:96 - Leak Test Case 6 Success!
-2025-11-13 11:08:37.927 | SUCCESS  | __main__:<module>:97 - Test Case 6:
-2025-11-13 11:08:37.927 | SUCCESS  | __main__:<module>:98 - Linux;ljudge;5.4.241-1-tlinux4-0017.10.eks.12;#1 SMP Fri May 23 13:28:45 CST 2025;x86_64
-2025-11-13 11:08:39.408 | SUCCESS  | __main__:<module>:114 - All Test Case Leaked!
-2025-11-13 11:08:39.408 | SUCCESS  | __main__:<module>:115 - {'0': 'Linux;ljudge;5.4.241-1-tlinux4-0017.10.eks.12;#1 SMP Fri May 23 13:28:45 CST 2025;x86_64', '1': 'Linux;ljudge;5.4.241-1-tlinux4-0017.10.eks.12;#1 SMP Fri May 23 13:28:45 CST 2025;x86_64', '2': 'Linux;ljudge;5.4.241-1-tlinux4-0017.10.eks.12;#1 SMP Fri May 23 13:28:45 CST 2025;x86_64', '3': 'Linux;ljudge;5.4.241-1-tlinux4-0017.10.eks.12;#1 SMP Fri May 23 13:28:45 CST 2025;x86_64', '4': 'Linux;ljudge;5.4.241-1-tlinux4-0017.10.eks.12;#1 SMP Fri May 23 13:28:45 CST 2025;x86_64', '5': 'Linux;ljudge;5.4.241-1-tlinux4-0017.10.eks.12;#1 SMP Fri May 23 13:28:45 CST 2025;x86_64', '6': 'Linux;ljudge;5.4.241-1-tlinux4-0017.10.eks.12;#1 SMP Fri May 23 13:28:45 CST 2025;x86_64'}
+2025-11-13 13:19:19.583 | INFO     | __main__:<module>:53 - Leak info start!
+2025-11-13 13:21:05.572 | SUCCESS  | __main__:<module>:98 - Leak info success!
+2025-11-13 13:21:05.573 | SUCCESS  | __main__:<module>:99 - Info: Linux;ljudge;5.4.241-1-tlinux4-0017.10.eks.12;#1 SMP Fri May 23 13:28:45 CST 2025;x86_64

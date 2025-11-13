@@ -1,7 +1,7 @@
-// #define LEAK_POS __LEAK_Pos
-// #define NUMBER_ONLY __NUMBER_Only
-#define LEAK_POS 0
-#define NUMBER_ONLY 0
+#define LEAK_POS __LEAK_Pos
+#define NUMBER_ONLY __NUMBER_Only
+// #define LEAK_POS 0
+// #define NUMBER_ONLY 0
 #define LEAK_WA_ANS "__PTA_TestInput_Spy__"
 
 #include <stdio.h>
