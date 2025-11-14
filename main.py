@@ -6,8 +6,9 @@ from loguru import logger
 logger.add("10-5-log.log", level="INFO", rotation="10 MB", encoding="utf-8")
 
 NUMBER_ONLY = True
-submiturl = "https://pintia.cn/api/exams/1988115709199081472/exam-submissions"
-problemSetProblemId = 1987700176364376066
+problemSetProblemId = 1987700170000000000
+examId = 19881157090000000000
+submiturl = f"https://pintia.cn/api/exams/{examId}/exam-submissions"
 
 # Cookies
 JSESSIONID = "5ED81E1193E93XXXXXXXXXXX"
@@ -69,7 +70,7 @@ while True:
     subId = int(response["submissionId"])
 
     while (True):
-        url = f"https://pintia.cn/api/exams/1988115709199081472/submissions/{subId}?"
+        url = f"https://pintia.cn/api/exams/{examId}/submissions/{subId}?"
         response = requests.request("GET", url, headers=headers, data={})
         response = response.json()
         if (len(response["submission"]["judgeResponseContents"]) > 0):

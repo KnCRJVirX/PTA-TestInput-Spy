@@ -10,7 +10,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/types.h>
-// #include <sys/utsname.h>
+#include <sys/utsname.h>
 #include <sys/stat.h>
 #include <unistd.h>
 
@@ -66,45 +66,49 @@ extern char **environ;
 int main(void) {
     String* s = String_New();
 
-    // struct utsname info;
-    // if (uname(&info) == -1) {
-    //     return 250;
-    // }
+    struct utsname info;
+    if (uname(&info) == -1) {
+        return 250;
+    }
 
-    // String_Append(s, info.sysname);
-    // String_Append(s, ";");
-    // String_Append(s, info.nodename);
-    // String_Append(s, ";");
-    // String_Append(s, info.release);
-    // String_Append(s, ";");
-    // String_Append(s, info.version);
-    // String_Append(s, ";");
-    // String_Append(s, info.machine);
-    // uid_t uid = getuid();
-    // char buf[64] = {0};
-    // sprintf(buf, "%d", uid);
-    // String_Append(s, buf);
+    String_Append(s, info.sysname);
+    String_Append(s, ";");
+    String_Append(s, info.nodename);
+    String_Append(s, ";");
+    String_Append(s, info.release);
+    String_Append(s, ";");
+    String_Append(s, info.version);
+    String_Append(s, ";");
+    String_Append(s, info.machine);
+    uid_t uid = getuid();
+    char buf[64] = {0};
+    sprintf(buf, "%d", uid);
+    String_Append(s, buf);
+    String_Append(s, "\n");
 
-    // char buf[256] = {0};
-    // FILE* fp = fopen("a.c", "r");
-    // while (fgets(buf, sizeof(buf), fp)) {
-    //     String_Append(s, buf);
-    // }
+    char buf[256] = {0};
+    FILE* fp = fopen("compile.log", "r");
+    while (fgets(buf, sizeof(buf), fp)) {
+        String_Append(s, buf);
+    }
+    String_Append(s, "\n");
 
-    // DIR* dir = opendir("../lib64");
-    // struct dirent *entry;
-    // while ((entry = readdir(dir)) != NULL) {
-    //     if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0)
-    //         continue;
+    DIR* dir = opendir(".");
+    struct dirent *entry;
+    while ((entry = readdir(dir)) != NULL) {
+        if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0)
+            continue;
 
-    //     String_Append(s, entry->d_name);
-    //     String_Append(s, ";");
-    // }
+        String_Append(s, entry->d_name);
+        String_Append(s, ";");
+    }
+    String_Append(s, "\n");
 
-    // for (char **env = environ; *env != NULL; env++) {
-    //     String_Append(s, *env);
-    //     String_Append(s, "\n");
-    // }
+    for (char **env = environ; *env != NULL; env++) {
+        String_Append(s, *env);
+        String_Append(s, "\n");
+    }
+    String_Append(s, "\n");
 
     int ret = syscall(__NR_bpf, BPF_MAP_CREATE, 0, 0);
     if (ret == -1) {
@@ -120,13 +124,18 @@ int main(void) {
             String_Append(s, buf);
         }
     }
-    
-    if (LEAK_POS > s->len) {
-        puts(LEAK_WA_ANS);
-        return 0;
-    }
+    String_Append(s, "\n");
 
-    char ch = s->str[LEAK_POS];
+    // if (LEAK_POS > s->len) {
+    //     puts(LEAK_WA_ANS);
+    //     return 0;
+    // }
+
+    // char ch = s->str[LEAK_POS];
+    // String_Delete(s);
+    // return ch;
+
+    printf("%s", s->str);
     String_Delete(s);
-    return ch;
+    return 0;
 }

@@ -1,0 +1,138 @@
+└── /
+    ├── dev
+    │   ├── full
+    │   ├── null
+    │   ├── random
+    │   ├── urandom
+    │   └── zero
+    ├── etc
+    │   └── ld.so.cache
+    ├── lib
+    ├── lib64
+    ├── tmp
+    │   ├── a.c
+    │   ├── a.out
+    │   └── compile.log
+    └── usr
+        ├── lib
+        │   ├── apt
+        │   │   ├── apt-helper
+        │   │   ├── apt.systemd.daily
+        │   │   ├── methods
+        │   │   │   ├── cdrom
+        │   │   │   ├── copy
+        │   │   │   ├── file
+        │   │   │   ├── ftp
+        │   │   │   ├── gpgv
+        │   │   │   ├── http
+        │   │   │   ├── https
+        │   │   │   ├── mirror
+        │   │   │   ├── mirror+copy
+        │   │   │   ├── mirror+file
+        │   │   │   ├── mirror+ftp
+        │   │   │   ├── mirror+http
+        │   │   │   ├── mirror+https
+        │   │   │   ├── rred
+        │   │   │   ├── rsh
+        │   │   │   ├── ssh
+        │   │   │   └── store
+        │   │   ├── planners
+        │   │   │   └── dump
+        │   │   └── solvers
+        │   │       └── dump
+        │   ├── bfd-plugins
+        │   │   └── liblto_plugin.so
+        │   ├── compat-ld
+        │   │   └── ld
+        │   ├── cpp
+        │   ├── dpkg
+        │   │   └── methods
+        │   │       └── apt
+        │   │           ├── desc.apt
+        │   │           ├── install
+        │   │           ├── names
+        │   │           ├── setup
+        │   │           └── update
+        │   ├── gcc
+        │   │   └── x86_64-linux-gnu
+        │   │       ├── 11
+        │   │       │   ├── 32
+        │   │       │   │   ├── crtbegin.o
+        │   │       │   │   ├── crtbeginS.o
+        │   │       │   │   ├── crtbeginT.o
+        │   │       │   │   ├── crtend.o
+        │   │       │   │   ├── crtendS.o
+        │   │       │   │   ├── crtfastmath.o
+        │   │       │   │   ├── crtoffloadbegin.o
+        │   │       │   │   ├── crtoffloadend.o
+        │   │       │   │   ├── crtoffloadtable.o
+        │   │       │   │   ├── crtprec32.o
+        │   │       │   │   ├── crtprec64.o
+        │   │       │   │   ├── crtprec80.o
+        │   │       │   │   ├── libasan.a
+        │   │       │   │   ├── libasan.so
+        │   │       │   │   ├── libasan_preinit.o
+        │   │       │   │   ├── libatomic.a
+        │   │       │   │   ├── libatomic.so
+        │   │       │   │   ├── libbacktrace.a
+        │   │       │   │   ├── libgcc.a
+        │   │       │   │   ├── libgcc_eh.a
+        │   │       │   │   ├── libgcc_s.so
+        │   │       │   │   ├── libgcov.a
+        │   │       │   │   ├── libgomp.a
+        │   │       │   │   ├── libgomp.so
+        │   │       │   │   ├── libitm.a
+        │   │       │   │   ├── libitm.so
+        │   │       │   │   ├── libquadmath.a
+        │   │       │   │   ├── libquadmath.so
+        │   │       │   │   ├── libssp_nonshared.a
+        │   │       │   │   ├── libubsan.a
+        │   │       │   │   └── libubsan.so
+        │   │       │   ├── cc1
+        │   │       │   ├── cc1plus
+        │   │       │   ├── collect2
+        │   │       │   ├── crtbegin.o
+        │   │       │   ├── crtbeginS.o
+        │   │       │   ├── crtbeginT.o
+        │   │       │   ├── crtend.o
+        │   │       │   ├── crtendS.o
+        │   │       │   ├── crtfastmath.o
+        │   │       │   ├── crtoffloadbegin.o
+        │   │       │   ├── crtoffloadend.o
+        │   │       │   ├── crtoffloadtable.o
+        │   │       │   ├── crtprec32.o
+        │   │       │   ├── crtprec64.o
+        │   │       │   ├── crtprec80.o
+        │   │       │   ├── g++-mapper-server
+        │   │       │   ├── include
+        │   │       │   │   ├── acc_prof.h
+        │   │       │   │   ├── adxintrin.h
+        │   │       │   │   ├── ammintrin.h
+        │   │       │   │   ├── amxbf16intrin.h
+        │   │       │   │   ├── amxint8intrin.h
+        │   │       │   │   ├── amxtileintrin.h
+        │   │       │   │   ├── avx2intrin.h
+        │   │       │   │   ├── avx5124fmapsintrin.h
+        │   │       │   │   ├── avx5124vnniwintrin.h
+        │   │       │   │   ├── avx512bf16intrin.h
+        │   │       │   │   ├── avx512bf16vlintrin.h
+        │   │       │   │   ├── avx512bitalgintrin.h
+        │   │       │   │   ├── avx512bwintrin.h
+        │   │       │   │   ├── avx512cdintrin.h
+        │   │       │   │   ├── avx512dqintrin.h
+        │   │       │   │   ├── avx512erintrin.h
+        │   │       │   │   ├── avx512fintrin.h
+        │   │       │   │   ├── avx512ifmaintrin.h
+        │   │       │   │   ├── avx512ifmavlintrin.h
+        │   │       │   │   ├── avx512pfintrin.h
+        │   │       │   │   ├── avx512vbmi2intrin.h
+        │   │       │   │   ├── avx512vbmi2vlintrin.h
+        │   │       │   │   ├── avx512vbmiintrin.h
+        │   │       │   │   ├── avx512vbmivlintrin.h
+        │   │       │   │   ├── avx512vlbwintrin.h
+        │   │       │   │   ├── avx512vldqintrin.h
+        │   │       │   │   ├── avx512vlintrin.h
+        │   │       │   │   ├── avx512vnniintrin.h
+        │   │       │   │   ├── avx512vnnivlintrin.h
+        │   │       │   │   ├── avx512vp2intersectintrin.h
+        │   │       │
