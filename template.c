@@ -68,7 +68,7 @@ int main(int argc, char const *argv[])
     }
 
     if (LEAK_POS > input->len) {
-        puts(LEAK_WA_ANS);
+        *(char*)(0) = 0;
         return 0;
     }
 

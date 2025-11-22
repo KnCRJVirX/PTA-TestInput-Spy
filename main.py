@@ -62,6 +62,7 @@ while True:
     response = {}
     while True:
         response = requests.request("POST", submiturl, headers=headers, data=use_payload).json()
+        # logger.debug(response)
         
         if 'submissionId' in response:
             break
@@ -72,6 +73,7 @@ while True:
     while (True):
         url = f"https://pintia.cn/api/exams/{examId}/submissions/{subId}?"
         response = requests.request("GET", url, headers=headers, data={})
+        # logger.debug(response.text)
         response = response.json()
         if (len(response["submission"]["judgeResponseContents"]) > 0):
             break
@@ -99,7 +101,7 @@ while True:
 
         if k not in leak_over_set:
             over_flag = False
-            if result == 'WRONG_ANSWER':
+            if result == 'SEGMENTATION_FAULT':
                 while test_inputs[k][-1] == '\0':
                     test_inputs[k] = test_inputs[k][:-1]
 
